@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(11, 37, 69, 0.92);
+    position: relative;
+    //border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    //border: 3px solid #3D5B59;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+    .intro{
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        //border-radius: 4px;
+        background: rgba(11, 37, 69, 0.92);
+        //border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(11, 37, 69, 0.3);
+        
+
+        .introTxt{
+            color: #F3F7F7;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 10%;
+        }
+
+        .placeHolder{
+        
+            pointer-events: none;
+            padding: 0.3rem;
+            font-size: 1rem;
+            opacity: 0.6rem; 
+            color: #F3F7F7;  
+            margin-top: 15%;
+        }
+
+        input{
+            width: 30%;
+            height: 5%;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            color: #F3F7F7;
+            border-radius: 6px;
+            background: rgba(243, 247, 247, 0.10);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(61, 91, 89, 0.3);
+        }
+    
+
+        .introBtn{
+            background: rgba(11, 37, 69, 0.92);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(11, 37, 69, 0.3);
+            color: #F3F7F7;
+            width: 120px;
+            height: 60px;
+            border-radius: 9px;
+            cursor: pointer;
+            border-style: none;
+            //border-color: #B99095;
+            margin: 1rem;
+            font-size: 1rem;
+            animation: pulse 3s linear infinite;
+
+            &:hover{
+                border: 1px solid #FCB5AC;
+            }
+            
+            }
+
+
+    }
+
+    .outro{
+        //outro
+        //display: hidden;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(11, 37, 69, 0.92);
+        //border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        //border: 1px solid rgba(11, 37, 69, 0.3);
+
+        .outroContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+           // border: 2px solid #A61C3C;
+            width: 100%;
+            height: 100%;
+
+            .outroTxt{
+                color: #F3F7F7;
+                text-align: center;
+                font-size: 2.5rem;
+                margin-top: 15%;
+            }
+    
+            .outroBtn{
+                background: rgba(11, 37, 69, 0.92);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(11, 37, 69, 0.3);
+                color: #F3F7F7;
+                width: 120px;
+                height: 60px;
+                border-radius: 9px;
+                cursor: pointer;
+                border-style: none;
+                //border-color: #B99095;
+                //margin-left: 50%;
+                font-size: 1rem;
+                animation: pulse 3s linear infinite;
+    
+                &:hover{
+                    border: 1px solid #FCB5AC;
+                }
+                
+                }                
+        }
+
+    }
+
+    .scoreBar{
+        width: 100%;
+        height: 20%;
+        //border: #3D5B59 2px solid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(11, 37, 69, 0.92);
+        //border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        //border: 1px solid rgba(11, 37, 69, 0.3);
+
+        .pScoreBox, .cScoreBox
+        {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 2rem;
+            color: #F3F7F7;
+        }
+    }
+
+    .aniBox{
+        //border: #3D5B59 2px solid;
+        background: rgba(11, 37, 69, 0.92);
+        //border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        .pvcContainer{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            //border: #FCB5AC 2px solid;
+        }
+        
+
+        .aniTxt{
+            font-size: 3rem;
+            color: #0b2545eb;
+        }
+    }
+
+    .btnBox{
+        width: 100%;
+        height: 20%;
+        background: rgba(11, 37, 69, 0.922);
+     //border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(11, 37, 69, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .rockBtn{
+            background: rgba(11, 37, 69, 0.92);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(11, 37, 69, 0.3);
+            color: #A61C3C;
+            width: 120px;
+            height: 60px;
+            border-radius: 9px;
+            cursor: pointer;
+            border-style: none;
+            margin: 1rem;
+            font-size: 1rem;
+
+            &:hover{
+                border: 2.5px solid #A61C3C;
+                //color: #A61C3C;
+            }
+        }
+
+        .paperBtn{
+            background: rgba(11, 37, 69, 0.92);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(11, 37, 69, 0.3);
+            color: #0081AF;
+            width: 120px;
+            height: 60px;
+            cursor: pointer;
+            border-style: none;
+            margin: 1rem;
+            font-size: 1rem;
+
+            &:hover{
+                border: 2.5px solid #0081AF;
+                //color: #0081AF;
+            }
+        }
+
+        .scissorsBtn{
+            background: rgba(11, 37, 69, 0.92);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(11, 37, 69, 0.3);
+            color: #15A223;
+            width: 120px;
+            height: 60px;
+            border-radius: 9px;
+            cursor: pointer;
+            border-style: none;
+            margin: 1rem;
+            font-size: 1rem;
+
+            &:hover{
+                border: 2.5px solid #15A223;
+                //color: #15A223;
+            }
+        }
+    }
+}
+
+
+/*
+
+
+@media screen and (max-width: 612px)
+{ 
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+    .options{
+        width: 100vw;
+    }
+
+*/

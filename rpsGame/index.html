@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini RPS</title>
+<link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="intro">
+            <p class="introTxt">
+                Rock, Paper, Scissors <br> With Javascript!
+            </p>
+
+                <label for="nameBox" class="placeHolder">Your Name:</label>
+                <input id="nameBox" class="playerName" type="text" name="name" autocomplete="off">
+                
+                <button class="introBtn" name="submit-button" type="submit" value="Enter">Enter</button>
+
+        </div>
+
+        <div class="outro">
+            <div class="outroContainer">
+                <p class="outroTxt">restart game</p>
+                <button class="outroBtn">Restart</button>
+            </div>
+        </div>
+
+        <div class="scoreBar">
+         <div class="pScoreBox">
+            <p class="pScore">0</p>
+            <p class="pName"></p>
+         </div>
+         <div class="cScoreBox">
+            <p class="cScore">0</p>
+            <p>CPU</p>
+         </div>
+        </div>
+        <div class="aniBox">
+            <div class="pvcContainer">
+                <div class="pContainer">
+                    <img class="playerHand" src="" alt="" />
+                </div>
+                <div class="cContainer">
+                    <img class="cpuHand" src="" alt="" />
+                </div>
+            </div>
+            
+            <p class="aniTxt"></p>
+        </div>
+        <div class="btnBox">
+            <button class="rockBtn">Rock</button>
+            <button class="paperBtn">Paper</button>
+            <button class="scissorsBtn">Scissor</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
