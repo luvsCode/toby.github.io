@@ -41,6 +41,13 @@ toggleButton.addEventListener('click', () =>
 
 })
 
+const rpsBtn = document.querySelector('#rpsBtn');
+
+rpsBtn.addEventListener('click', () =>
+{
+  location.replace('../rpsGame/index.html');
+})
+
 
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------

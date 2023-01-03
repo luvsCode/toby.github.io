@@ -315,6 +315,24 @@ body {
   font-size: 1.2rem;
 }
 
+.projectContainer .projectCards .cards .projBtn {
+  background: rgba(11, 37, 69, 0.92);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(11, 37, 69, 0.3);
+  color: #15A223;
+  width: 120px;
+  height: 60px;
+  border-radius: 9px;
+  cursor: pointer;
+  border-style: none;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
 .contactContainer {
   height: 100vh;
   background: #212838;
@@ -510,6 +528,7 @@ body {
   }
   .navContainer .navToggle {
     opacity: 1;
+    z-index: 999;
   }
   .navContainer .navToggle:hover {
     cursor: pointer;
